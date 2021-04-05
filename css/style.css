@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+body {
+  font-family: Lato;
+}
+
+.font {
+  font-family: Raleway;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
 .main-width {
   width: 100%;
   box-sizing: border-box;
@@ -10,11 +23,13 @@
   padding: 15px;
   background-color: white;
   position: fixed;
+  z-index: 100;
 }
 
-.inner-header {
+.second-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a.btn {
@@ -41,7 +56,7 @@ i.fas {
   background-color: #f2f2f2;
 }
 
-.inner {
+.text-content {
   text-align: center;
 }
 
@@ -66,17 +81,20 @@ i.fas {
 }
 
 .green {
-  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .green-image {
-  margin: 50px 120px 0;
+  margin: 50px 100px 0;
+  font-size: 0;
 }
 
 .green-title {
   color: white;
   font-size: 24px;
-  margin: 50px 0 35px;
+  margin-bottom: 35px;
 }
 
 .green-content {
@@ -105,6 +123,7 @@ i.fas {
   transition: 0.3s;
   margin-top: 80px;
   margin-left: 100px;
+  z-index: 10;
 }
 
 .image:nth-child(1), .image:nth-child(2), .image:nth-child(3) {
@@ -116,16 +135,17 @@ i.fas {
 }
 
 .image:hover {
-  opacity: 0;
+  opacity: 1;
 }
 
-.inner-second {
+.center-space {
   display: flex;
   justify-content: center;
 }
 
 .image-bottom {
   margin-top: 90px;
+  align-items: center;
 }
 
 a.mail-btn {
@@ -134,19 +154,18 @@ a.mail-btn {
 }
 
 .black {
-  display: inline-block;
+  padding: 70px 0 100px;
   background-color: #333;
 }
 
 .black-title {
   color: white;
   font-size: 24px;
-  margin: 70px 0 40px
+  margin-bottom: 40px;
 }
 
 .black-image {
   margin-left: 180px;
-  margin-bottom: 100px;
 }
 
 .black-image:first-child {
@@ -175,9 +194,9 @@ a i.fas:hover, a i.fab:hover {
   background-color: white;
 }
 
-.footer-text {
+.footer {
   font-size: 16px;
   color: white;
   text-align: right;
-  padding: 20px 100px 25px;
+  padding: 20px 0 25px;
 }
