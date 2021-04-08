@@ -62,13 +62,14 @@ i.fas {
 }
 
 .title {
-  padding: 320px 0 250px;
+  padding-bottom: 250px;
 }
 
 .main-title {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
+  padding-top: 320px;
 }
 
 .second-title {
@@ -117,23 +118,24 @@ i.fas {
   flex-wrap: wrap;
 }
 
-.image {
+ul.image li {
   opacity: 0.7;
   transition: 0.3s;
   margin-top: 80px;
   margin-left: 100px;
+  float: left;
   z-index: 10;
 }
 
-.image:nth-child(1), .image:nth-child(2), .image:nth-child(3) {
+ul.image li:nth-child(1), ul.image li:nth-child(2), ul.image li:nth-child(3) {
   margin-top: 40px;
 }
 
-.image:nth-child(3n+1) {
+ul.image li:nth-child(3n+1) {
   margin-left: 0;
 }
 
-.image:hover {
+ul.image li:hover {
   opacity: 1;
 }
 
@@ -162,25 +164,23 @@ a.mail-btn {
   font-size: 24px;
 }
 
-.graph{
+ul.graph li{
   margin-top: 40px;
-}
-
-.black-image {
   margin-left: 180px;
 }
 
-.black-image:first-child {
+ul.graph li:first-child {
   margin-left: 0;
 }
 
 .black-image-content {
+  margin-top: 10px;
   text-align: center;
   font-size: 16px;
   color: white;
 }
 
-.navigation {
+ul.navigation {
   padding: 200px 0;
 }
 
