@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-  background-color: white;
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -36,7 +36,7 @@ body {
 a.btn {
   text-decoration: none;
   background-color: #74cfae;
-  color: white;
+  color: #fff;
   font-size: 12px;
   transition: 0.3s;
 }
@@ -49,7 +49,7 @@ a.contact-btn {
   padding: 14px 12px;
 }
 
-i.fas {
+.icon-bolt {
   color: #c0c0c0;
 }
 
@@ -61,15 +61,18 @@ i.fas {
   text-align: center;
 }
 
+main{
+  padding-top: 70px;
+}
+
 .title {
-  padding-bottom: 250px;
+  padding: 250px 0;
 }
 
 .main-title {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
-  padding-top: 320px;
 }
 
 .second-title {
@@ -95,12 +98,12 @@ i.fas {
 }
 
 .green-title {
-  color: white;
+  color: #fff;
   font-size: 24px;
 }
 
 .green-content {
-  color: white;
+  color: #fff;
   font-size: 20px;
   margin-top: 35px;
 }
@@ -121,14 +124,14 @@ i.fas {
 ul.image li {
   opacity: 0.7;
   transition: 0.3s;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-left: 100px;
   float: left;
   z-index: 10;
 }
 
-ul.image li:nth-child(1), ul.image li:nth-child(2), ul.image li:nth-child(3) {
-  margin-top: 40px;
+ul.image li:nth-child(n+4) {
+  margin-top: 80px;
 }
 
 ul.image li:nth-child(3n+1) {
@@ -137,6 +140,10 @@ ul.image li:nth-child(3n+1) {
 
 ul.image li:hover {
   opacity: 1;
+}
+
+a {
+  display: block;
 }
 
 .center-space {
@@ -160,7 +167,7 @@ a.mail-btn {
 }
 
 .black-title {
-  color: white;
+  color: #fff;
   font-size: 24px;
 }
 
@@ -177,14 +184,14 @@ ul.graph li:first-child {
   margin-top: 10px;
   text-align: center;
   font-size: 16px;
-  color: white;
+  color: #fff;
 }
 
 ul.navigation {
   padding: 200px 0;
 }
 
-a i.fas, a i.fab {
+a i.icon {
   width: 185px;
   text-align: center;
   padding: 30px 0;
@@ -192,13 +199,13 @@ a i.fas, a i.fab {
   transition: 0.3s;
 }
 
-a i.fas:hover, a i.fab:hover {
-  background-color: white;
+a i.icon:hover {
+  background-color: #fff;
 }
 
 .footer {
   font-size: 16px;
-  color: white;
+  color: #fff;
   text-align: right;
   padding: 20px 0 25px;
 }
