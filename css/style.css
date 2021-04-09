@@ -116,22 +116,23 @@ main{
   font-size: 24px;
 }
 
-.image-six {
+ul.image {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 ul.image li {
   opacity: 0.7;
   transition: 0.3s;
-  margin-top: 40px;
+  margin-top: 80px;
   margin-left: 100px;
   float: left;
   z-index: 10;
 }
 
-ul.image li:nth-child(n+4) {
-  margin-top: 80px;
+ul.image li:nth-child(-n+3) {
+  margin-top: 0;
 }
 
 ul.image li:nth-child(3n+1) {
