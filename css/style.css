@@ -103,6 +103,7 @@ main{
 }
 
 .green-content {
+  width: 650px;
   color: #fff;
   font-size: 20px;
   margin-top: 35px;
@@ -157,14 +158,21 @@ a {
   align-items: center;
 }
 
+.image-text {
+  width: 460px;
+}
+
 a.mail-btn {
   margin-left: 90px;
   padding: 14px 20px;
 }
 
 .black {
-  padding: 70px 0 100px;
   background-color: #4e4e4e;
+}
+
+.black-padding {
+  padding: 70px 0 100px;
 }
 
 .black-title {
@@ -172,8 +180,11 @@ a.mail-btn {
   font-size: 24px;
 }
 
-ul.graph li{
+ul.graph {
   margin-top: 40px;
+}
+
+ul.graph li{
   margin-left: 180px;
 }
 
@@ -210,3 +221,9 @@ a i.icon:hover {
   text-align: right;
   padding: 20px 0 25px;
 }
+
+/* TAB */
+@media (max-width: 1199px) {}
+
+/* SP */
+@media (max-width: 767px) {}
