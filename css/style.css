@@ -4,6 +4,10 @@ body {
   font-family: Lato;
 }
 
+.wrap {
+  overflow: hidden;
+}
+
 .font {
   font-family: Raleway;
 }
@@ -27,7 +31,7 @@ body {
 }
 
 .second-header {
-  padding: 15px;
+  padding: 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,6 +51,10 @@ a.btn:hover {
 
 a.contact-btn {
   padding: 14px 12px;
+}
+
+.btn-box {
+  display: none;
 }
 
 .icon-bolt {
@@ -295,5 +303,68 @@ a i.icon:hover {
 
 /* SP */
 @media (max-width: 767px) {
+  .btn-box {
+    height: 20px;
+    width: 30px;
+    display: block;
+    padding: 10px;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    position: relative;
+  }
   
+  .span {
+    width: 30px;
+    height: 3px;
+    left: 10px;
+    background-color: #ddd;
+    position: absolute;
+  }
+  
+  .span1 {
+    top: 10px;
+  }
+  
+  .span2 {
+    top: 20px;
+  }
+  
+  .span3 {
+    top: 30px;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .title {
+    padding: 160px 0 130px;
+    width: 300px;
+  }
+
+  .main-title {
+    font-size: 80px;
+  }
+
+  .green-image {
+    margin: 0;
+  }
+
+  .green-content {
+    width: 280px;
+  }
+
+  .image-text {
+    width: 280px;
+  }
+
+  ul.navigation {
+    padding: 50px 15px;
+    display: block;
+    text-align: center;
+  }
+
+  a i.icon {
+    width: 100%;
+  }
 }
