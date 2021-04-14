@@ -137,7 +137,6 @@ ul.image li {
   transition: 0.3s;
   margin-top: 80px;
   margin-left: 100px;
-  float: left;
   z-index: 10;
 }
 
@@ -233,6 +232,10 @@ a i.icon:hover {
 
 /* TAB */
 @media (max-width: 1199px) {
+  main{
+    padding-top: 78px;
+  }
+
   .inner {
     width: 97%;
   }
@@ -243,37 +246,35 @@ a i.icon:hover {
     text-align: center;
   }
 
-  .green-title {
+  .green-contents {
     margin-top: 20px;
   }
 
   .green-content {
-    margin-top: 35px;
-    width: 920px;
+    width: 85%;
     margin: 0 auto;
   }
 
-  a {
+  a.mail-btn {
     display: inline-block;
   }
 
-  .image-title {
-    margin-bottom: 40px;
-  }
-
   ul.image {
-    display: inline;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 40px;
   }
 
   ul.image li {
     margin: 0;
-    float: none;
     text-align: center;
   }
 
-  ul.image li:nth-child(4) {
+  ul.image li:nth-child(3n+1) {
     margin-top: 80px;
+  }
+
+  ul.image li:first-child {
+    margin-top: 0;
   }
 
   .image-bottom {
@@ -283,7 +284,7 @@ a i.icon:hover {
   }
 
   .image-text {
-    width: 800px;
+    width: 85%;
     margin: 0 auto;
   }
 
@@ -298,6 +299,10 @@ a i.icon:hover {
 
   ul.graph li {
     margin: 88px 0 0;
+  }
+
+  ul.graph li:first-child {
+    margin: 0;
   }
 }
 
@@ -350,17 +355,13 @@ a i.icon:hover {
     margin: 0;
   }
 
-  .green-content {
-    width: 280px;
-  }
-
-  .image-text {
-    width: 280px;
+  ul.navigation {
+    padding: 50px 15px;
+    box-sizing: border-box;
+    flex-direction: column;
   }
 
   ul.navigation {
-    padding: 50px 15px;
-    display: block;
     text-align: center;
   }
 
